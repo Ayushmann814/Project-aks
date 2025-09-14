@@ -3,13 +3,13 @@ name: terraform-todaoapp
 on: 
   push:
     branches: 
-    - master
+    - main
 
 
 jobs: 
   terraform-deploy:
     runs-on: ubuntu-latest
-    if: github.repository == terraform-todoapp-infra
+    # if: github.repository == terraform-todoapp-infra
     steps: 
     - name: Checkout
       uses: actions/checkout@v5.0.0
